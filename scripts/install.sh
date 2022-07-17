@@ -130,8 +130,8 @@ install() {
   elif [ "$gui" == "xfce" ]; then
     echo -e "\n${green}installing xfce${reset}"
     installXFCE
-  elif [ "$gui" == "i3" ]; then
-    echo -e "\n${green}installing i3${reset}"
+  elif [ "$gui" == "i3wm" ]; then
+    echo -e "\n${green}installing i3wm${reset}"
     installI3WM
   else
     echo -e "\n${red}gui not recognized!${reset}"
