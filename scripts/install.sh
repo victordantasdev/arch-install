@@ -28,7 +28,7 @@ install() {
   echo -e "${green}Selected Interface: $gui ${reset}\n\n"
 
   # configure pacman
-  sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/g' /etc/locale.gen
+  sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/g' /etc/pacman.conf
   pacman -Syyu
   echo -e "${green}PACMAN configurated!${reset}"
   echo -e "${green}\nSTARTING INSTALATION...\n${reset}"
